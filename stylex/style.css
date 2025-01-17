@@ -1,0 +1,286 @@
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+.work-sans-normal {
+    font-family: "Work Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } */
+
+
+
+  /* Shared Styles */
+.display-flex {
+    display: flex;
+}
+.dark-1 {
+    color: (19, 19, 19, 1);
+}
+.dark-2 {
+    color: rgba(66, 66, 66, 1);
+}
+.dark-3 {
+    color: rgba(114, 114, 114, 1);
+}
+.orange {
+    color: rgba(255, 144, 14, 1);
+}
+.primary-desc {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(114, 114, 114, 1);
+}
+.margin-zero {
+    margin: 0;
+}
+.section-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+main > section {
+    margin-bottom: 98px;
+}
+
+
+.primary-btn {
+    background-color: rgba(255, 144, 14, 1);
+    padding: 15px 18px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+
+  /* Header styles */
+.header {
+    background-color: rgba(255, 144, 14, 0.1);
+    margin-bottom: 64px;
+}
+
+
+
+  /* Navbar styles */
+  .navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+.brand {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: rgba(19, 19, 19, 1);
+}
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+}
+.navbar, .banner, main, footer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+
+/* banner style */
+.banner-title {
+    font-size: 4rem;
+    text-align: center;
+    font-weight: bold;
+}
+.banner-content {
+    max-width: 646px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+.banner img {
+    width: 100%;
+    padding-bottom: 45px;
+}
+
+
+/* Quick Feature Section Style */
+.feature-image-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-right: 3.5rem;
+}
+.feature-container {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 98px;
+}
+
+
+/* Love and Enjoy Section Style */
+.fact-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 98px;
+}
+.card {
+    text-align: center;
+    height: 11.25rem;
+    width: 11.25rem;
+    border: 1px solid rgba(255, 144, 14, 1);
+    border-radius: 6px;
+    margin-right: 5.8rem;
+    align-items: center;
+    justify-content: center;
+}
+.fact-card-number {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 7.5px;
+    margin-bottom: 4px;
+}
+.fact-card-name {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+/* Sponcer Section Style */
+.sponcer-content {
+    max-width: 406px;
+    margin: 0 auto;
+    text-align: center;
+}
+.sponcer-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.image-gray {
+    filter: grayscale();
+}
+
+/* love and feature style */
+.love-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.feature-details {
+    max-width: 440px;
+    padding: 15px 20px;
+    border: 1px solid white;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.feature-architect {
+    margin-left: 100px;
+}
+.feature-architect img {
+    width: 100%;
+}
+#love-feature-head {
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 15px;
+}
+.feature-name {
+    color: rgba(19, 19, 19, 1);
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 0;
+    margin-bottom: 7.5px;
+}
+.experience-year {
+    font-size: 3rem;
+    font-weight: bold;
+}
+#experience-budge {
+    padding: 33px 31px;
+    margin-left: -69px;
+    margin-top: -57px;
+}
+
+/* Footer Style */
+.footer-conainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 244, 231, 1);
+    margin-bottom: 150px;
+}
+
+
+
+/* Responsive Styles */
+/* 1. Media Quary for Small Device (such as mobile phone) */
+@media screen and (max-width: 576px) {
+    .navbar, .nav-links, .feature-container, .feature-container, .love-container {
+        flex-direction: column;
+    }
+    .feature-image-content, .fact-cards, .sponcer-icons {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .feature-image-content img, .feature-picture {
+        width: 100%;
+    }
+    .fact-cards {
+        gap: 10px;
+        justify-items: center;
+    }
+    .sponcer-icons {
+        gap: 24px;
+        justify-items: center;
+    } 
+    .footer-conainer {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    #experience-budge {
+        margin: 20px;
+    }
+    .feature-architect {
+        margin: 0 auto;
+    }
+}
+
+
+/* 2. Media Quary for Medium Device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .feature-container, .love-container {
+        flex-direction: column;
+    }
+    .feature-image-content img {
+        width: 100%;
+    }
+    .quick-content {
+        margin: 0 auto;
+    }
+    .fact-cards, .sponcer-icons  {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        justify-items: center;
+    }
+    #last-sponcer {
+        grid-column: span 2;
+    }
+    .footer-conainer {
+        margin-bottom: 40px;
+    }
+    .feature-architect {
+        margin: 0 auto;
+    } 
+    #experience-budge {
+        margin: 20px;
+    }
+}
